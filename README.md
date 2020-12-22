@@ -19,7 +19,7 @@ TO get started clone this repo and follow instructions
 Installing will require just 2 steps:
 
     - Build client-side code in auth-client module by running 'npm run build' 
-    - Build everything else by running 'gradl build' in the root of the project
+    - Build everything else by running 'gradle build' in the root of the project
 
 #### Running
 Running will require the following steps:
