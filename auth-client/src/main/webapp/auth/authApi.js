@@ -9,7 +9,8 @@ import axios from 'axios';
 import tokenManager from './tokenManager';
 
 const authInstance = axios.create({
-	baseURL: '/gateway-service/'
+	baseURL: '/gateway-service/',
+	port: 8765
 });
 
 authInstance.interceptors.request.use(config => {
