@@ -10,10 +10,12 @@ import java.util.List;
  * Simple controller to imitate some data which will be requested from client service
  */
 @RestController
-public class DataController {
+public class DataController implements HasLogger {
 
 	@GetMapping("/events")
 	public List<DataDTO> getFullUserInfo() {
+
+		getLogger().info("Request to get events");
 
 		List<DataDTO> events = new ArrayList<>();
 		events.add(new DataDTO("created-01", "2020-02-24", "17:06", "New tracking has been created, first in the "
